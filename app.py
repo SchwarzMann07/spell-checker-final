@@ -11,7 +11,7 @@ while True:
   
   for each_word in list_of_words:
     
-    if each_word == "dfgsaguffeu":
+    if each_word == "dfgswefwefwefwewfefaguffeu":
       feelings_list.append("nice")
       encouragement_list.append("this is correct! nice typing!")
       counter += 1
