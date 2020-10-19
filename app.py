@@ -1,43 +1,85 @@
-print("Title of program: spell-checker bot")
+print("Title of program: spell-check ver 2")
 print()
-while True:
-  description = input("Type the following: dfgsaguffeu")
+print("This is a program for people to check their typing skills for accuracy")
 
-  list_of_words = description.split()
+counter = 0
+score = 0
+total_num_of_qn = 3
 
-  feelings_list = []
-  encouragement_list = []
-  counter = 0
+
+counter +=1
+tracker = 0
+
+while tracker !=1:
   
-  for each_word in list_of_words:
-    
-    if each_word == "dfgsaguffeu":
-      feelings_list.append("nice")
-      encouragement_list.append("this is correct! nice typing!")
-      counter += 1
+  print("Q"+str(counter)+") "+ "type this: sdfghjhgfdwtyuj")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "sdfghjhgfdwtyuj":
+    output = "Yes, that's right!"
+    tracker =1
+    score +=1
+  else :
+    output = "Wrong. Check again."
+    score -=1
+  
+  print()
+  print(output)
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
 
-  if counter == 0:
-    
-      output = "Sorry this is wrong, try again?"
 
-  elif counter == 1:
-    
-      output = "It seems that you typing is " + feelings_list[0] + ".  remember that "+ encouragement_list[0] + "! Hope you feel better :)"  
+counter +=1
+tracker = 0
 
-  else:
-
-    feelings = ""    
-    for i in range(len(feelings_list)-1):
-      feelings += feelings_list[i] + ", "
-    feelings += "and " + feelings_list[-1]
-    
-    encouragement = ""    
-    for j in range(len(encouragement_list)-1):
-      encouragement += encouragement_list[i] + ", "
-    encouragement += "and " + encouragement_list[-1]
-
-    output = "It seems that your typing is " + feelings + ". Please always remember "+ encouragement + "! Hope you feel better :)"
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "type this: e2f6ge7h4c8yn359")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "e2f6ge7h4c8yn359":
+    output = "Yes, that's right!"
+    tracker =1
+    score +=1
+  else :
+    output = "Wrong. Check again."
+    score -=1
 
   print()
   print(output)
   print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
+  
+
+counter +=1
+tracker = 0
+
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "type this: qyf8yge8r383r0-`~")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "qyf8yge8r383r0-`~":
+    output = "Yes, that's right!"
+    tracker =1
+    score +=1
+  else :
+    output = "Wrong. Check again."
+    score -=1
+  
+
+  print()
+  print(output.lower())
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
+print("Well Done!")
+print("End of quiz! Hope you had fun!")
